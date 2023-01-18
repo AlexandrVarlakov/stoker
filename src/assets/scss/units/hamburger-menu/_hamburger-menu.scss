@@ -1,0 +1,231 @@
+.hamburger-menu{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 40px;    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+    transform: translate(0, 100%);
+    opacity: 0;
+    display: none;
+
+    animation: show-hamburger-menu 500ms forwards;
+
+    @media (max-width: 1100px){
+        display: none !important;
+    }
+}
+
+@keyframes show-hamburger-menu {
+    to{
+        opacity: 1;
+        transform: translate(0, calc(100% - 10px));
+    }
+
+}
+
+
+.mob-hamburger-menu{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+
+    left: -30px;
+
+    overflow-y: auto;
+
+    position: absolute;
+    width: 100vw;
+    max-width: 510px;
+    bottom: 0;
+    
+    background: #FFFFFF;
+    
+    
+    transform: translate(-200%, 100%);
+    transition: 300ms;
+
+
+
+    @media (min-width: 1101px){
+        display: none !important; 
+    }
+
+    @media (max-width: 700px){
+        left: -16px;
+    }
+}
+
+.mob-hamburger-menu.open{
+    transform: translate(0%, 100%);
+}
+
+
+.hamburger-menu.open{
+    display: block;
+}
+
+.hamburger-menu__categories{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 16px;
+
+    margin-bottom: 40px;
+}
+
+.hamburger-menu__category{
+    background: #CDCDCD;
+    border-radius: 6px;
+    padding: 7px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.38;
+    color: #FFFFFF;
+    transition: 300ms;
+    &:hover{
+        background-color: #005898;;
+    }
+}
+
+.hamburger-menu__category.active{
+    background-color: #005898;;
+}
+
+.hamburger-menu__grid-links{
+    display: none;
+    grid-template-columns: 240px 240px 240px;
+    grid-gap: 0px 60px;
+}
+
+.hamburger-menu__grid-links.active{
+    display: grid;
+}
+
+.hamburger-menu__links{
+    a{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 2.25;
+        color: #005898;
+        transition: 300ms;
+        span{
+            font-weight: 400;
+            color: #989898;
+            transition: 300ms;
+        }
+
+        &:hover{
+            color: rgba($color: #005898, $alpha: .8);
+            span{
+                color: #333;
+            }
+        }
+    }
+
+
+}
+
+.m-accordion__item{
+    @media (max-width: 1100px){
+        .m-accordion__header{
+            margin-top: 0;
+        }   
+    }
+}
+
+
+.m-accordion__item.open{
+    .m-accordion__header{
+        img{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.m-accordion__header{
+    background-color: #005898;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 30px;
+    margin-top: 3px;
+    cursor: pointer;
+    p{        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.38;
+        color: #FFFFFF;
+        margin-right: 16px;
+    }
+
+    img{
+        flex-shrink: 0;
+        transition: 300ms;
+    }
+
+    @media (max-width: 700px){
+        padding: 9px 16px;
+    }
+}
+
+
+.m-accordion__links{
+    padding: 12px 30px 20px;
+
+    @media (max-width: 700px){
+        padding: 12px 16px 20px;
+    }
+
+    a{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 2.25;
+        color: #005898;
+
+        span{
+            color: #989898;
+        }
+    }
+}
+
+.m-accordion__body{
+    height: 0;
+    overflow: hidden;
+    transition: 200ms;
+}
+
+.mob-hamburger-menu__menu{
+    margin-top: 4px;
+
+    li{
+        padding: 16px 30px;
+        border-bottom: 1px solid #CDCDCD;
+
+        &:first-of-type{
+            border-top: 1px solid #CDCDCD;
+        }
+        @media (max-width: 700px){
+            padding: 16px 16px;
+        }
+
+        a{            
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.1875;
+            color: #005898;
+        }
+    }
+}
+
+.mob-hamburger-menu__soc-links{
+    display: flex;
+    gap: 24px;
+    padding: 24px 30px;
+
+    @media (max-width: 700px){
+        padding: 24px 16px;
+    }
+}

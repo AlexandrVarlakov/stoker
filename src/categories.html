@@ -1,0 +1,1111 @@
+@@include('templates/head.html')    
+@@include('templates/header.html')    
+
+    <main>
+        <section class="section breadcrumbs-section">
+            <div class="section__inner">
+                <nav class="breadcrumbs">
+                    <a href="#">Главная</a>
+                    <a href="#">Каталог</a>
+
+                    <!--В последнем HREF не ставим-->
+                    <a >Женская одежда</a>
+                </nav>
+            </div>
+            
+        </section>
+
+        <section class="section">
+            <div class="section__inner">
+                <div class="categories-page">
+                    <div class="categories-page__filters-col">
+
+                        <div class="cp-products-list-wrap">
+                            <!--СЮДА ЗАПИСЫВАЕМ ТЕКУЩУЮ КАТЕГОРИЮ-->
+                            <button class="mob-open-category">
+                                <span>Женская одежда</span>
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7494 17.4155C13.6288 17.4162 13.5092 17.393 13.3975 17.3474C13.2858 17.3018 13.1842 17.2346 13.0986 17.1496L7.59859 11.6496C7.42786 11.4779 7.33203 11.2456 7.33203 11.0034C7.33203 10.7612 7.42786 10.5289 7.59859 10.3571L13.0986 4.85714C13.2739 4.70696 13.4995 4.62849 13.7302 4.6374C13.9609 4.64631 14.1798 4.74195 14.343 4.9052C14.5063 5.06846 14.6019 5.2873 14.6108 5.51801C14.6197 5.74871 14.5413 5.97428 14.3911 6.14964L9.54192 10.9988L14.3911 15.848C14.5198 15.9756 14.6078 16.1386 14.6439 16.3163C14.68 16.4939 14.6626 16.6783 14.5939 16.8461C14.5252 17.0139 14.4083 17.1575 14.258 17.2589C14.1077 17.3602 13.9307 17.4147 13.7494 17.4155Z" fill="white"/>
+                                </svg>
+                            </button>
+
+                            <div class="cp-products-list">
+
+
+                                <div class="category-products-accordion" data-mode="single">
+                                    <div class="acc-item m-accordion__item " >
+                                        <div class="acc-header m-accordion__header">
+                                            <p>Женская одежда</p>
+                                            <img src="assets/img/icons/accordion-arrow.svg" alt="">
+                                        </div>
+                                        <div class="acc-body m-accordion__body">
+                                            <ul class="acc-body-inner m-accordion__links">
+                                                <li><a href="#">Блузки <span>(12)</span></a></li>
+                                                <li><a href="#">Брюки <span>(43)</span></a></li>
+                                                <li><a href="#">Шорты <span>(23)</span></a></li>
+                                                <li><a href="#">Верхняя одежда <span>(23)</span></a></li>
+                                                <li><a href="#">Джемперы, свитеры и пуловеры <span>(234)</span></a></li>
+                                                <li><a href="#">Джинсы <span>(234)</span></a></li>
+                                                <li><a href="#">Комбинезоны <span>(42)</span></a></li>
+                                                <li><a href="#">Домашняя одежда <span>(532)</span></a></li>
+                                                <li><a href="#">Нижнее белье <span>(23424)</span></a></li>
+                                                <li><a href="#">Носки, чулки, колготки <span>(332)</span></a></li>
+                                                <li><a href="#">Пиджаки и костюмы <span>(0)</span></a></li>
+                                                <li><a href="#">Платья и сарафаны <span>(42)</span></a></li>
+                                                <li><a href="#">Спортивная одежда <span>(234)</span></a></li>
+                                                <li><a href="#">Топы и майки <span>(234)</span></a></li>
+                                                <li><a href="#">Туники <span>(42)</span></a></li>
+                                                <li><a href="#">Футболки и поло <span>(42)</span></a></li>
+                                                <li><a href="#">Юбки <span>(24)</span></a></li>
+                                                <li><a href="#">Боди <span>(5)</span></a></li>
+                                                <li><a href="#">Для беременных <span>(234)</span></a></li>
+                                                <li><a href="#">Купальники и пляжная одежда <span>(234)</span></a></li>
+                                                <li><a href="#">Рубашки <span>(24)</span></a></li>
+                                                <li><a href="#">Легкие куртки, ветровки <span>(234)</span></a></li>                                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="acc-item m-accordion__item open">
+                                        <div class="acc-header m-accordion__header">
+                                            <p>Мужская одежда</p>
+                                            <img src="assets/img/icons/accordion-arrow.svg" alt="">
+                                        </div>
+                                        <div class="acc-body m-accordion__body">
+                                            <ul class="acc-body-inner m-accordion__links">
+                                                <li><a href="#">Блузки <span>(12)</span></a></li>
+                                                <li><a href="#">Брюки <span>(43)</span></a></li>
+                                                <li><a href="#">Шорты <span>(23)</span></a></li>
+                                                <li><a href="#">Верхняя одежда <span>(23)</span></a></li>
+                                                <li><a href="#">Джемперы, свитеры и пуловеры <span>(234)</span></a></li>
+                                                <li><a href="#">Джинсы <span>(234)</span></a></li>
+                                                <li><a href="#">Комбинезоны <span>(42)</span></a></li>
+                                                <li><a href="#">Домашняя одежда <span>(532)</span></a></li>
+                                                <li><a href="#">Нижнее белье <span>(23424)</span></a></li>
+                                                <li><a href="#">Носки, чулки, колготки <span>(332)</span></a></li>
+                                                <li><a href="#">Пиджаки и костюмы <span>(0)</span></a></li>
+                                                <li><a href="#">Платья и сарафаны <span>(42)</span></a></li>
+                                                <li><a href="#">Спортивная одежда <span>(234)</span></a></li>
+                                                <li><a href="#">Топы и майки <span>(234)</span></a></li>
+                                                <li><a href="#">Туники <span>(42)</span></a></li>
+                                                <li><a href="#">Футболки и поло <span>(42)</span></a></li>
+                                                <li><a href="#">Юбки <span>(24)</span></a></li>
+                                                <li><a href="#">Боди <span>(5)</span></a></li>
+                                                <li><a href="#">Для беременных <span>(234)</span></a></li>
+                                                <li><a href="#">Купальники и пляжная одежда <span>(234)</span></a></li>
+                                                <li><a href="#">Рубашки <span>(24)</span></a></li>
+                                                <li><a href="#">Легкие куртки, ветровки <span>(234)</span></a></li>                                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="acc-item m-accordion__item">
+                                        <div class="acc-header m-accordion__header">
+                                            <p>Детская одежда</p>
+                                            <img src="assets/img/icons/accordion-arrow.svg" alt="">
+                                        </div>
+                                        <div class="acc-body m-accordion__body">
+                                            <ul class="acc-body-inner m-accordion__links">
+                                                <li><a href="#">Блузки <span>(12)</span></a></li>
+                                                <li><a href="#">Брюки <span>(43)</span></a></li>
+                                                <li><a href="#">Шорты <span>(23)</span></a></li>
+                                                <li><a href="#">Верхняя одежда <span>(23)</span></a></li>
+                                                <li><a href="#">Джемперы, свитеры и пуловеры <span>(234)</span></a></li>
+                                                <li><a href="#">Джинсы <span>(234)</span></a></li>
+                                                <li><a href="#">Комбинезоны <span>(42)</span></a></li>
+                                                <li><a href="#">Домашняя одежда <span>(532)</span></a></li>
+                                                <li><a href="#">Нижнее белье <span>(23424)</span></a></li>
+                                                <li><a href="#">Носки, чулки, колготки <span>(332)</span></a></li>
+                                                <li><a href="#">Пиджаки и костюмы <span>(0)</span></a></li>
+                                                <li><a href="#">Платья и сарафаны <span>(42)</span></a></li>
+                                                <li><a href="#">Спортивная одежда <span>(234)</span></a></li>
+                                                <li><a href="#">Топы и майки <span>(234)</span></a></li>
+                                                <li><a href="#">Туники <span>(42)</span></a></li>
+                                                <li><a href="#">Футболки и поло <span>(42)</span></a></li>
+                                                <li><a href="#">Юбки <span>(24)</span></a></li>
+                                                <li><a href="#">Боди <span>(5)</span></a></li>
+                                                <li><a href="#">Для беременных <span>(234)</span></a></li>
+                                                <li><a href="#">Купальники и пляжная одежда <span>(234)</span></a></li>
+                                                <li><a href="#">Рубашки <span>(24)</span></a></li>
+                                                <li><a href="#">Легкие куртки, ветровки <span>(234)</span></a></li>                                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="acc-item m-accordion__item">
+                                        <div class="acc-header m-accordion__header">
+                                            <p>Экостокер</p>
+                                            <img src="assets/img/icons/accordion-arrow.svg" alt="">
+                                        </div>
+                                        <div class="acc-body m-accordion__body">
+                                            <ul class="acc-body-inner m-accordion__links">
+                                                <li><a href="#">Блузки <span>(12)</span></a></li>
+                                                <li><a href="#">Брюки <span>(43)</span></a></li>
+                                                <li><a href="#">Шорты <span>(23)</span></a></li>
+                                                <li><a href="#">Верхняя одежда <span>(23)</span></a></li>
+                                                <li><a href="#">Джемперы, свитеры и пуловеры <span>(234)</span></a></li>
+                                                <li><a href="#">Джинсы <span>(234)</span></a></li>
+                                                <li><a href="#">Комбинезоны <span>(42)</span></a></li>
+                                                <li><a href="#">Домашняя одежда <span>(532)</span></a></li>
+                                                <li><a href="#">Нижнее белье <span>(23424)</span></a></li>
+                                                <li><a href="#">Носки, чулки, колготки <span>(332)</span></a></li>
+                                                <li><a href="#">Пиджаки и костюмы <span>(0)</span></a></li>
+                                                <li><a href="#">Платья и сарафаны <span>(42)</span></a></li>
+                                                <li><a href="#">Спортивная одежда <span>(234)</span></a></li>
+                                                <li><a href="#">Топы и майки <span>(234)</span></a></li>
+                                                <li><a href="#">Туники <span>(42)</span></a></li>
+                                                <li><a href="#">Футболки и поло <span>(42)</span></a></li>
+                                                <li><a href="#">Юбки <span>(24)</span></a></li>
+                                                <li><a href="#">Боди <span>(5)</span></a></li>
+                                                <li><a href="#">Для беременных <span>(234)</span></a></li>
+                                                <li><a href="#">Купальники и пляжная одежда <span>(234)</span></a></li>
+                                                <li><a href="#">Рубашки <span>(24)</span></a></li>
+                                                <li><a href="#">Легкие куртки, ветровки <span>(234)</span></a></li>                                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="cp-filters-list-wrap" >
+
+                            
+
+                            <button class="mob-open-filters">
+                                <span>Фильтры</span>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.5433 25.482C24.7919 25.482 25.0304 25.3833 25.2062 25.2075C25.382 25.0316 25.4808 24.7932 25.4808 24.5445V21.6289C26.2401 21.4253 26.9111 20.9768 27.3896 20.3531C27.8682 19.7293 28.1276 18.9651 28.1276 18.1789C28.1276 17.3927 27.8682 16.6285 27.3896 16.0047C26.9111 15.381 26.2401 14.9325 25.4808 14.7289V5.45703C25.4808 5.20839 25.382 4.96993 25.2062 4.79412C25.0304 4.6183 24.7919 4.51953 24.5433 4.51953C24.2946 4.51953 24.0562 4.6183 23.8804 4.79412C23.7045 4.96993 23.6058 5.20839 23.6058 5.45703V14.7383C22.8464 14.9419 22.1754 15.3904 21.6969 16.0141C21.2184 16.6379 20.959 17.4021 20.959 18.1883C20.959 18.9745 21.2184 19.7387 21.6969 20.3625C22.1754 20.9862 22.8464 21.4347 23.6058 21.6383V24.5539C23.6082 24.8009 23.7081 25.037 23.8837 25.2108C24.0592 25.3846 24.2962 25.4821 24.5433 25.482ZM22.8276 18.1789C22.8276 17.8396 22.9283 17.5079 23.1168 17.2258C23.3053 16.9436 23.5732 16.7237 23.8867 16.5939C24.2002 16.464 24.5452 16.4301 24.878 16.4963C25.2108 16.5624 25.5165 16.7258 25.7564 16.9658C25.9963 17.2057 26.1597 17.5114 26.2259 17.8442C26.2921 18.177 26.2582 18.522 26.1283 18.8355C25.9984 19.1489 25.7786 19.4169 25.4964 19.6054C25.2143 19.7939 24.8826 19.8945 24.5433 19.8945C24.0883 19.8945 23.6519 19.7138 23.3301 19.392C23.0084 19.0703 22.8276 18.6339 22.8276 18.1789Z" fill="white"/>
+                                    <path d="M14.9988 25.4801C15.2475 25.4801 15.4859 25.3814 15.6617 25.2056C15.8376 25.0297 15.9363 24.7913 15.9363 24.5426V11.5489C16.7765 11.3216 17.5056 10.7969 17.9879 10.0724C18.4701 9.34782 18.6728 8.47275 18.5582 7.60994C18.4436 6.74714 18.0194 5.95534 17.3647 5.38184C16.71 4.80834 15.8692 4.49219 14.9988 4.49219C14.1285 4.49219 13.2877 4.80834 12.633 5.38184C11.9782 5.95534 11.5541 6.74714 11.4395 7.60994C11.3249 8.47275 11.5275 9.34782 12.0098 10.0724C12.4921 10.7969 13.2211 11.3216 14.0613 11.5489V24.5426C14.0613 24.7913 14.1601 25.0297 14.3359 25.2056C14.5117 25.3814 14.7502 25.4801 14.9988 25.4801ZM13.2832 8.10826C13.2814 7.76855 13.3804 7.43594 13.5678 7.15257C13.7552 6.86921 14.0225 6.64785 14.3358 6.51656C14.6491 6.38527 14.9943 6.34996 15.3278 6.41509C15.6612 6.48023 15.9677 6.64288 16.2086 6.88244C16.4495 7.122 16.6138 7.42767 16.6808 7.76072C16.7477 8.09378 16.7143 8.43921 16.5847 8.75325C16.4552 9.06728 16.2353 9.33578 15.953 9.52471C15.6706 9.71365 15.3386 9.81451 14.9988 9.81451C14.5454 9.81452 14.1105 9.63505 13.789 9.31534C13.4675 8.99562 13.2857 8.56165 13.2832 8.10826Z" fill="white"/>
+                                    <path d="M4.51788 18.4508V24.5445C4.51788 24.7932 4.61665 25.0316 4.79247 25.2075C4.96828 25.3833 5.20674 25.482 5.45538 25.482C5.70402 25.482 5.94248 25.3833 6.11829 25.2075C6.29411 25.0316 6.39288 24.7932 6.39288 24.5445V18.4508C7.15224 18.2472 7.8232 17.7987 8.30175 17.175C8.78029 16.5512 9.03967 15.787 9.03967 15.0008C9.03967 14.2146 8.78029 13.4504 8.30175 12.8266C7.8232 12.2029 7.15224 11.7544 6.39288 11.5508V5.45703C6.39288 5.20839 6.29411 4.96993 6.11829 4.79412C5.94248 4.6183 5.70402 4.51953 5.45538 4.51953C5.20674 4.51953 4.96828 4.6183 4.79247 4.79412C4.61665 4.96993 4.51788 5.20839 4.51788 5.45703V11.5508C3.75852 11.7544 3.08756 12.2029 2.60901 12.8266C2.13047 13.4504 1.87109 14.2146 1.87109 15.0008C1.87109 15.787 2.13047 16.5512 2.60901 17.175C3.08756 17.7987 3.75852 18.2472 4.51788 18.4508ZM5.45538 13.2852C5.79509 13.2833 6.12771 13.3823 6.41107 13.5697C6.69444 13.7571 6.91579 14.0244 7.04708 14.3377C7.17837 14.651 7.21369 14.9963 7.14855 15.3297C7.08342 15.6631 6.92076 15.9697 6.6812 16.2106C6.44165 16.4514 6.13597 16.6158 5.80292 16.6827C5.46987 16.7497 5.12443 16.7163 4.8104 16.5867C4.49636 16.4571 4.22786 16.2372 4.03893 15.9549C3.85 15.6726 3.74913 15.3405 3.74913 15.0008C3.74912 14.5474 3.92859 14.1124 4.24831 13.791C4.56802 13.4695 5.00199 13.2876 5.45538 13.2852Z" fill="white"/>
+                                </svg>
+                            </button>
+                            <form class="filters-list" method="get" action="#url">
+                                <input type="hidden" name="length" value="">
+                                <input type="hidden" name="order_by" value="">
+
+
+                                <div class="tooltip-btn-container" >
+                                    <button class="tooltip-filter-btn">Показать</button>
+                                </div>
+                                <div class="filters-acc" data-mode="single">
+                                    <div class="acc-item filters-acc__item open">
+                                        
+                                        <div class="acc-header filters-acc__header">
+                                            <span class="filters-acc__title">Цена руб</span>
+                                            <img src="assets/img/icons/blue-arrow.svg" alt="">
+                                        </div>
+    
+                                        <div class="acc-body filters-acc__body ">
+                                            <div class="acc-body-inner filters-acc__body-inner">
+                                                <div class="range-filter ">
+                                                    <div class="ranges-wrapper tooltip-target">
+                                                        
+                                                        <input type="text" class="price-range-input min-range" name="min-price" min="0" max="499" value="0" data-step="1" data-tooltip>                                                    
+                                                        
+                                                        
+                                                        <input type="text" class="price-range-input max-range" name="max-price" min="1" max="5000" value="5000" data-step="1" data-tooltip>                                                    
+                                                        
+                                                    </div>
+            
+                                                    <div id="range-slider" ></div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+    
+                                        
+                                    </div>
+    
+                                    <div class="acc-item filters-acc__item">
+                                        <div class="acc-header filters-acc__header">
+                                            <span class="filters-acc__title">Размеры</span>
+                                            <img src="assets/img/icons/blue-arrow.svg" alt="">
+                                        </div>
+                                        <div class="acc-body filters-acc__body">
+                                            <div class="acc-body-inner filters-acc__body-inner">
+                                                
+                                                
+                                                
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="sizes[]" id="filter-sizes-1" value="160 см" data-tooltip>
+                                                    <label for="filter-sizes-1">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        
+                                                        <span>160 см</span>
+                                                        
+                                                    </label>
+                                                    
+                                                </div>                                                
+
+                                                
+                                                <div class="custom-cb tooltip-target" >
+                                                    <input type="checkbox" name="sizes[]" id="filter-sizes-2" value="18 мес" data-tooltip>
+                                                    <label for="filter-sizes-2">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        <span>18 мес</span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="sizes[]" id="filter-sizes-3" value="18-24 мес" data-tooltip>
+                                                    <label for="filter-sizes-3">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+    
+                                                        <span>18-24 мес</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="acc-item filters-acc__item">
+                                        <div class="acc-header filters-acc__header">
+                                            <span class="filters-acc__title">Цвет</span>
+                                            <img src="assets/img/icons/blue-arrow.svg" alt="">
+                                        </div>
+        
+                                        <div class="acc-body filters-acc__body">
+                                            <div class="acc-body-inner filters-acc__body-inner">
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="colors[]" id="filter-color-1" value="Красный" data-tooltip>
+                                                    <label for="filter-color-1">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        
+                                                        <span>Красный</span>
+                                                        
+                                                    </label>
+                                                    
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="colors[]" id="filter-color-2" value="Желтый" data-tooltip>
+                                                    <label for="filter-color-2">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        <span>Желтый</span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="colors[]" id="filter-color-3" value="Зеленый" data-tooltip>
+                                                    <label for="filter-color-3">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+        
+                                                        <span>Зеленый</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="acc-item filters-acc__item">
+                                        <div class="acc-header filters-acc__header">
+                                            <span class="filters-acc__title">Импортер</span>
+                                            <img src="assets/img/icons/blue-arrow.svg" alt="">
+                                        </div>
+        
+                                        <div class="acc-body filters-acc__body">
+                                            <div class="acc-body-inner filters-acc__body-inner">
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="importers[]" id="filter-importer-1" value="Импортер-1" data-tooltip>
+                                                    <label for="filter-importer-1">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        
+                                                        <span>Импортер-1</span>
+                                                        
+                                                    </label>
+                                                    
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="importers[]" id="filter-importer-2" value="Импортер-2" data-tooltip>
+                                                    <label for="filter-importer-2">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        <span>Импортер-2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="importers[]" id="filter-importer-3" value="Импортер-3" data-tooltip>
+                                                    <label for="filter-importer-3">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+        
+                                                        <span>Импортер-3</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="acc-item filters-acc__item">
+                                        <div class="acc-header filters-acc__header">
+                                            <span class="filters-acc__title">Сезон</span>
+                                            <img src="assets/img/icons/blue-arrow.svg" alt="">
+                                        </div>
+        
+                                        <div class="acc-body filters-acc__body">
+                                            <div class="acc-body-inner filters-acc__body-inner">
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="sezons[]" id="filter-sezon-1" value="Лето" data-tooltip>
+                                                    <label for="filter-sezon-1">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        
+                                                        <span>Лето</span>
+                                                        
+                                                    </label>
+                                                    
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="sezons[]" id="filter-sezon-2" value="Осень" data-tooltip   >
+                                                    <label for="filter-sezon-2">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        <span>Осень</span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="sezons[]" id="filter-sezon-3" value="Зима" data-tooltip>
+                                                    <label for="filter-sezon-3">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+        
+                                                        <span>Зима</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="acc-item filters-acc__item">
+                                        <div class="acc-header filters-acc__header">
+                                            <span class="filters-acc__title">Состояние</span>
+                                            <img src="assets/img/icons/blue-arrow.svg" alt="">
+                                        </div>
+        
+                                        <div class="acc-body filters-acc__body">
+                                            <div class="acc-body-inner filters-acc__body-inner">
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="conditions[]" id="filter-condition-1" value="Новый" data-tooltip>
+                                                    <label for="filter-condition-1">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        
+                                                        <span>Новый</span>
+                                                        
+                                                    </label>
+                                                    
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="conditions[]" id="filter-condition-2" value="Почти новый" data-tooltip>
+                                                    <label for="filter-condition-2">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        <span>Почти новый</span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="conditions[]" id="filter-condition-3" value="Выглядит как новый" data-tooltip>
+                                                    <label for="filter-condition-3">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+        
+                                                        <span>Выглядит как новый</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="acc-item filters-acc__item">
+                                        <div class="acc-header filters-acc__header">
+                                            <span class="filters-acc__title">Состав</span>
+                                            <img src="assets/img/icons/blue-arrow.svg" alt="">
+                                        </div>
+        
+                                        <div class="acc-body filters-acc__body">
+                                            <div class="acc-body-inner filters-acc__body-inner">
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="structures[]" id="filter-structure-1" value="Хлопок" data-tooltip>
+                                                    <label for="filter-structure-1">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        
+                                                        <span>Хлопок</span>
+                                                        
+                                                    </label>
+                                                    
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="structures[]" id="filter-structure-2" value="Нехлопок" data-tooltip>
+                                                    <label for="filter-structure-2">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+                                                        <span>Нехлопок</span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-cb tooltip-target">
+                                                    <input type="checkbox" name="structures[]" id="filter-structure-3" value="Еще что-то там" data-tooltip>
+                                                    <label for="filter-structure-3">
+                                                        <div class="custom-cb__box">
+                                                            <img src="assets/img/icons/filter-checkbox-arrow.svg" alt="">
+                                                        </div>
+        
+                                                        <span>Еще что-то там</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                
+                                <div class="btn-filter-wrap">
+                                    <button class="btn-filter">Применить</button>
+                                </div>
+                               
+                                
+                                
+    
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="categories-page__content-col">
+                        <h2 class="title">Женская одежда</h2>
+
+                        <div class="cp-brands">
+                            <a href="#" class="cp-brands__link">
+                                <img src="assets/img/brands-banner/1.jpg" alt="">
+                            </a>
+                            <a href="#" class="cp-brands__link">
+                                <img src="assets/img/brands-banner/2.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="sort-panel">
+                            <div class="sorter">
+                                <span class="sorter__label">Сортировать по:</span>
+                                <div class="sorter__links">
+                                    <a href="#" data-order="views"  class="sorter__link active">Популярности</a>                                    
+                                    <a href="#" data-order="price" class="sorter__link">Цене</a>
+                                    <a href="#" data-order="discount" class="sorter__link">Скидке</a>
+                                    <a href="#" data-order="date" class="sorter__link">Обновлению</a>
+                                </div>
+                            </div>
+
+
+
+
+                            <!--
+                                Событие onChange задается в selectOptions 
+                                Смотреть main.js
+                            -->
+                            <div class="mob-sorter">
+                                <easy-select id="first-select" name="sort-by">
+                                    <easy-option value="views" selected>Популярности</easy-option>                                                
+                                    <easy-option value="price">Цене</easy-option>            
+                                    <easy-option value="discount">Скидке</easy-option>            
+                                    <easy-option value="date">Обновлению</easy-option>                                                
+                                </easy-select>
+                            </div>
+
+
+                            <div class="card-on-page">
+                                <a href="#" class="card-on-page__count active">12</a>
+                                <a href="#" class="card-on-page__count">24</a>
+                                <a href="#" class="card-on-page__count">36</a>
+                            </div>
+                        </div>
+
+
+                        <div class="products-grid">
+
+                            <!--Для товаров в корзине  добавляем класс .in-cart
+                                - меняет цвет кнопки
+                                - меняет иконку
+                            -->
+
+                            <div class="product-card in-cart">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_new">New</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/1.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование товара (может быть длинным)</p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">1 600 ₽</p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзине</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Для зарезервированных товаров добавляем класс .in-reserve
+                                - меняет цвет кнопки
+                                - меняет иконку
+                            -->
+
+                            <div class="product-card in-reserve">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_sale">%</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/2.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование </p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">1 600 ₽</p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>Резерв</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+
+                            <!--Для товаров в корзине  добавляем класс .in-cart
+                                - меняет цвет кнопки
+                                - меняет иконку
+                            -->
+                            <div class="product-card in-cart">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_new">New</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/3.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование товара (может быть длинным)</p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">1 600 ₽</p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзине</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="product-card">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_new">New</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/4.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование товара (может быть длинным)</p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">1 600 ₽</p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="product-card">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_new">New</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/5.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование товара (может быть длинным)</p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">1 600 ₽</p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="product-card">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_new">New</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/6.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование товара (может быть длинным)</p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">1 600 ₽</p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="product-card">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_new">New</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/1.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование товара (может быть длинным)</p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">1 600 ₽</p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="product-card">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_new">New</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/1.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование товара (может быть длинным)</p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">1 600 ₽</p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="product-card">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_new">New</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/1.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование товара (может быть длинным)</p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">1 600 ₽</p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_sale">%</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/1.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование товара (может быть длинным)</p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">
+                                        1 600 ₽
+                                        <span class="product-card__old-price">2000 ₽</span>
+                                    </p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="product-card">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_sale">%</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/2.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование </p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">
+                                        1 600 ₽
+                                    <span class="product-card__old-price">2000 ₽</span>
+                                </p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="product-card">
+                                <div class="product-card__inner">
+                                    <div class="product-card__add-favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74162 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873Z" fill="#005898"/>
+                                        </svg>
+                                        
+                                        
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart">
+                                            <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7459C14.2647 14.0642 15.9687 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03037 9.99998 5.03037C9.73707 5.03037 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z" fill="#005898"/>
+                                        </svg>
+                                            
+                                    </div>
+        
+                                    <div class="product-card__state">
+                                        <div class="product-card__label product-card__label_sale">%</div>
+                                    </div>
+        
+                                    <a href="#" class="product-card__img">
+                                        <img src="assets/img/products/3.png" alt="">
+                                    </a>
+        
+                                    <div class="product-card__feature">
+                                        <img src="assets/img/icons/tag.svg" alt="">
+                                        <p>С этикеткой</p>
+                                    </div>
+        
+        
+                                    <p class="product-card__description">Наименование товара (может быть длинным)</p>
+                                    <p class="product-card__size">Размер M</p>
+        
+                                    <p class="product-card__price">
+                                        1 600 ₽
+                                        <span class="product-card__old-price">2000 ₽</span>
+                                    </p>
+        
+                                    <div class="product-card__buy">
+                                        <button class="product-card__buy-btn">
+                                            <i class="product-card__btn-icon"></i>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagination-wrap">
+                            <nav class="pagination">
+                                <!--Если нет ссылки назад / вперед href не ставим-->
+                                <a class="pagination__arrow">
+                                    <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.500929 9.75054L9.45823 0.517569C10.1277 -0.172523 11.2131 -0.172523 11.8826 0.51757C12.5521 1.20766 12.5521 2.32646 11.8826 3.01655L5.85181 9.23294L25.2857 9.23302C26.2326 9.23302 27.0001 10.0241 27 11C27 11.9759 26.2326 12.7671 25.2857 12.7671L5.85175 12.7671L11.8826 18.9835C12.552 19.6735 12.552 20.7923 11.8826 21.4824C11.2131 22.1725 10.1277 22.1725 9.45819 21.4824L0.500931 12.2495C-0.158802 11.5695 -0.175106 10.4474 0.500929 9.75054Z" fill="#CDCDCD"/>
+                                    </svg>
+                                </a>
+
+                                <div class="pagination__links">
+                                    <a href="#" class="pagination__item active">1</a>
+                                    <a href="#" class="pagination__item">2</a>
+                                    <a href="#" class="pagination__item">3</a>
+                                    <a href="#" class="pagination__item">4</a>
+                                    <a href="#" class="pagination__item">5</a>
+                                </div>
+
+                                <a href="#" class="pagination__arrow">
+                                    <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.4991 9.75054L17.5418 0.517569C16.8723 -0.172523 15.7869 -0.172523 15.1174 0.51757C14.4479 1.20766 14.4479 2.32646 15.1174 3.01655L21.1482 9.23294L1.71427 9.23302C0.767435 9.23302 -5.98846e-05 10.0241 3.50512e-09 11C-7.13147e-07 11.9759 0.767432 12.7671 1.71427 12.7671L21.1482 12.7671L15.1174 18.9835C14.448 19.6735 14.448 20.7923 15.1174 21.4824C15.7869 22.1725 16.8723 22.1725 17.5418 21.4824L26.4991 12.2495C27.1588 11.5695 27.1751 10.4474 26.4991 9.75054Z" fill="#CDCDCD"/>
+                                    </svg>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+@@include('templates/footer.html')    
+@@include('templates/foot.html')    
+            
+    

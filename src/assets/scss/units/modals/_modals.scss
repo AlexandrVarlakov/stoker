@@ -1,0 +1,160 @@
+.modal{
+    display: none;
+
+
+    background-color: #fff;
+    max-width: calc(100vw - 32px);
+    position: relative;
+}
+
+
+.modal__close{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    cursor: pointer;
+    right: 12px;
+    top: 12px;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        background-color: #ccc;
+        width: 100%;
+        height: 2px;
+        transform: translate(0, -50%) rotate(45deg);
+        transition: 300ms;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        
+        width: 100%;
+        height: 2px;
+
+        background-color: #ccc;
+        transition: 300ms;
+        transform: translate(0, -50%) rotate(-45deg);
+    }
+
+    &:hover{
+        &::before, &::after{
+            background-color: red;
+        } 
+    }
+}
+
+
+.modal-table{
+    padding: 0;
+    width: 800px;
+    
+}
+.modal-conditions{
+    width: 600px;
+}
+
+
+
+.modal__inner{
+    padding: 32px;
+
+    display: grid;
+    grid: 1fr;
+    grid-gap: 16px;
+
+    @media (max-width: 1024px){
+        padding: 42px 16px 32px;
+        
+    }
+}
+
+.sizes-table-wrap{
+    overflow: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.table-sizes{
+    
+    font-size: 12px;
+    border-spacing: 0;
+
+    min-width: 560px;
+
+
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    th{
+        
+        line-height: 1.5;
+        vertical-align: top;
+        
+        font-weight: 600;
+        background-color: #f7f7f7;
+    }
+    th, td{
+        padding: 15px;
+        border: 1px solid #ccc;
+
+        
+    }
+
+    td{
+        color: rgb(128, 127, 127);
+    }
+
+    td{
+        
+    }
+}
+
+.table-title{
+    
+    font-size: 14px;
+    color: rgb(128, 127, 127);
+}
+
+.modal-title{
+    margin-bottom: 4px;
+}
+
+.modal__text-block{
+    p{
+        font-size: 14px;
+        color: rgb(128, 127, 127);
+
+        &:not(:first-of-type){
+            margin-top: 8px;
+        }
+    }
+}
+
+.conditions-table{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px 
+}
+
+.conditions-table__item{
+    display: flex;
+    width: 45%;
+    align-items: flex-start;
+
+
+    @media (max-width: 420px){
+        width: 100%;
+    }
+    img{
+        flex-shrink: 0;
+    }
+    span{
+        font-size: 14px;
+        line-height: 2;
+        display: inline-block;
+        margin-left: 8px;
+    }
+}

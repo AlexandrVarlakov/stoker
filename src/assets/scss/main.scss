@@ -1,0 +1,179 @@
+@import 'fonts-include/roboto';
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+
+	font-family: $font-family;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	background-color: #F0F0F0;
+}
+
+main{
+	flex-grow: 1;
+
+	padding-top: 180px;
+
+	@media (max-width: 1100px){
+		padding-top: 100px;
+	}
+	@media (max-width: 700px){
+		padding-top: 70px;
+	}
+}
+
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+button{
+	font-family: inherit;
+	border: none;
+	background: transparent;
+	outline: none;
+	cursor: pointer;
+}
+
+input, textarea{
+	font-family: inherit;
+	border: none;
+	background: #fff;
+	outline: none;
+}
+
+address{
+	font-style: normal;
+}
+
+ul{
+	list-style: none;
+}
+
+
+.section{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 0 30px;
+
+	margin-bottom: 50px;
+
+	@media(max-width: 700px){
+		padding: 0 16px;
+	}
+}
+
+.section__inner{
+	width: 100%;
+	max-width: 1180px;
+}
+.section.slider-products-section{
+	@media (max-width: 420px){
+		padding-right: 0;
+	}
+}
+.title{
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 1.15;
+	text-transform: uppercase;
+	color: #005898;
+	margin-bottom: 30px;
+
+	@media (max-width: 1024px){
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+}
+
+.custom-cb{
+	display: flex;
+	
+	input[type="checkbox"]{
+		display: none;
+	}
+	input[type="checkbox"] + label{
+		display: flex;
+		width: 100%;
+		align-items: flex-start;
+		cursor: pointer;
+		.custom-cb__box{
+			width: 4px;
+			display: flex;
+			width: 18px;
+			height: 18px;
+			border: 2px solid #005898;
+			border-radius: 3px;
+		}
+
+		img{
+			opacity: 0;
+		}
+
+		span{
+			margin-left: 8px;
+			font-size: 14px;
+			color: #005898;
+			font-weight: 500;
+		}
+	}
+
+	input[type="checkbox"]:checked + label{
+		.custom-cb__box{
+			background-color: rgba($color: #005898, $alpha: 1);
+		}
+		img{
+			opacity: 1;
+		}
+	}
+}
+
+
+@import 'vars';
+@import 'units/header/header';
+@import 'units/footer/footer';
+@import 'units/bottom-menu/bottom-menu';
+@import 'units/hamburger-menu/hamburger-menu';
+@import 'units/product-card/product-card';
+@import 'units/swiper/swiper';
+@import 'units/sliders/sliders';
+@import 'units/guarantees/guarantees';
+@import 'units/about/about';
+@import 'units/brands/brands';
+@import 'units/news-grid/news-grid';
+@import 'units/reviews/reviews';
+@import 'units/breadcrumbs/breadcrumbs';
+@import 'units/categories-page/categories-page';
+@import 'units/pagination/pagination';
+@import 'accordion';
+@import 'units/easySelect/easySelect';
+@import 'units/product/product';
+@import 'units/modals/modals';
+@import 'units/easyModal/easyModal';
+
+
+
+/*
+@import 'units/hamburger/hamburger';
+
+@import 'units/mob-menu/mob-menu';
+
+@import 'units/modals/modals';
+
+@import 'units/sliders/sliders';
+*/
