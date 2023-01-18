@@ -545,7 +545,11 @@ input::-webkit-inner-spin-button {
     padding: 16px 8px 16px;
 }
 
-.btn-filter{
+.btn-filter-wrap + .btn-filter-wrap{
+    padding-top: 0;
+}
+
+.btn-filter, .filter-reset{
     padding: 16px;
     color: #fff;
     background: #005898;
@@ -553,10 +557,20 @@ input::-webkit-inner-spin-button {
     font-weight: 500;
     width: 100%;
     border-radius: 3px;
-    transition: 300ms;
-
-    
+    transition: 300ms;    
 }
+
+.filter-reset{
+    background-color: #989898;
+    display: inline-block;
+    text-align: center;
+
+    &:hover{
+        background-color: #EC7E16;
+    }
+}
+
+
 
 .tooltip-btn-container{
     position: absolute;
@@ -622,3 +636,4 @@ input::-webkit-inner-spin-button {
 
    
 }
+
