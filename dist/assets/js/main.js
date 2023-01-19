@@ -581,24 +581,8 @@ if ( rangeSlider ){
 
 
 
-
-  IMask(
-    minRange, {
-      mask: Number,
-      min: minValue,
-      max: maxValue
-  });
-  
-  IMask(
-    maxRange, {
-      mask: Number,
-      min: minValue,
-      max: maxValue
-  });
-  
-  
   noUiSlider.create(rangeSlider, {
-      start: [minValue, maxValue],
+      start: [minRange.value, maxRange.value],
       connect: true,
       range: {
           'min': minValue,
@@ -671,9 +655,25 @@ if ( rangeSlider ){
         
   });
 
+  IMask(
+    minRange, {
+      mask: Number,
+      min: minValue,
+      max: maxValue
+  });
+  
+  IMask(
+    maxRange, {
+      mask: Number,
+      min: minValue,
+      max: maxValue
+  });
+
 }
 
 
+
+  
 
 /*---------------------------------------*/
 
